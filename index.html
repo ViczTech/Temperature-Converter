@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temp Calc</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
- <div class="theContainer">
-  <h1>Temperature</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Calc</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-  <input class="number" type="number" name="number" placeholder="0">
+  <body>
+    <!-- CONTAINS THE COMPLETE BLACK BOX -->
+    <div class="theContainer">
+      <h1>Temperature</h1>
+      <!-- TEMPERTURE HEADING -->
+      <input
+        class="number"
+        type="number"
+        name="number"
+        id="input"
+        placeholder="0"
+      />
+      <!-- INPUT FOR CURRENT TEMPERTURE FIGURES -->
+      <button class="curr temp" id="curr">Celsius</button>
+      <div class="tempSelect hidden" id="currtempSelect">
+        <div class="others">
+          <button class="temp" id="currFah">Fahrenheit</button>
+          <button class="temp" id="currKev">Kelvin</button>
+          <button class="temp" id="currCel">Celsius</button>
+        </div>
+      </div>
+      <!-- BUTTON FOR SWITCHING BETWEEN TEMPERATURE CURRENT TYPES  -->
 
-  <button class="curr temp" id="curr"> Celsius</button>
-  <div class="tempSelect hidden" id="tempSelect">
-    <div class="others">
-      <button class="temp" id="Fah"> Fahrenheit</button>
-      <button class="temp" id="Kev"> Kelvin</button>
-      <button class="temp" id="Cel"> Celsius</button>
+      <button class="curr temp" id="next">Celsius</button>
+      <div class="tempSelect hidden" id="nexttempSelect">
+        <div class="others">
+          <button class="temp" id="nextFah">Fahrenheit</button>
+          <button class="temp" id="nextKev">Kelvin</button>
+          <button class="temp" id="nextCel">Celsius</button>
+        </div>
+      </div>
+      <p class="result" id="result">0</p>
+
+      <div class="container">
+        <button class="keypad" id="enter">Enter</button>
+        <button class="keypad" id="clearAll">CE</button>
+        <button class="keypad" id="no0">0</button>
+        <button class="keypad" id="no7">7</button>
+        <button class="keypad" id="no8">8</button>
+        <button class="keypad" id="no9">9</button>
+        <button class="keypad" id="no4">4</button>
+        <button class="keypad" id="no5">5</button>
+        <button class="keypad" id="no6">6</button>
+        <button class="keypad" id="no1">1</button>
+        <button class="keypad" id="no2">2</button>
+        <button class="keypad" id="no3">3</button>
+      </div>
     </div>
-  </div>
-  
-  <button class="curr temp" id="curr"> Celsius</button>
-  <div class="tempSelect hidden" id="tempSelect">
-    <div class="others">
-      <button class="temp" id="Fah"> Fahrenheit</button>
-      <button class="temp" id="Kev"> Kelvin</button>
-      <button class="temp" id="Cel"> Celsius</button>
-    </div>
-  </div>
-  <p class="result" id="result">739</p>
 
-  <div class="container">
-    <button class="keypad" id="keypad">Vicz</button>
-    <button class="keypad"> CE</button>
-    <button class="keypad"> E</button>
-    <button class="keypad"> 7</button>
-    <button class="keypad"> 8</button>
-    <button class="keypad"> 9</button>
-    <button class="keypad"> 4</button>
-    <button class="keypad"> 5</button>
-    <button class="keypad"> 6</button>
-    <button class="keypad"> 1</button>
-    <button class="keypad"> 2</button>
-    <button class="keypad"> 3</button>
-    <button class="keypad"> -/+</button>
-    <button class="keypad"> 0</button>
-    <button class="keypad"> .</button>
-  </div>
- </div>
-
-  <script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>

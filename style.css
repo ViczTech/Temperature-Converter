@@ -1,9 +1,9 @@
-body{
+body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
-.theContainer{
+.theContainer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -17,13 +17,13 @@ body{
   padding: 20px;
   height: auto;
 }
-h1{
+h1 {
   color: white;
   font-weight: 500;
   font-size: 25px;
   text-align: center;
 }
-.number{
+.number {
   width: 90%;
   height: 40px;
   border-radius: 8px;
@@ -32,7 +32,24 @@ h1{
   border: none;
   color: white;
 }
-.tempSelect{
+.temp {
+  min-width: 100px;
+  padding: 5px 0px;
+  margin: 4px 0;
+  border-radius: 5px;
+  background-color: rgb(85, 85, 85);
+  border: none;
+  color: white;
+}
+.temp:hover {
+  background-color: rgb(100, 100, 100);
+  color: rgb(185, 185, 185);
+}
+.curr {
+  max-width: 100px;
+  margin: 20px 0px 0px 0px;
+}
+.tempSelect {
   display: flex;
   flex-direction: column;
   max-width: 100px;
@@ -44,41 +61,26 @@ h1{
   border-radius: 5px;
   padding: 5px;
 }
-.temp{
-  min-width: 100px;
-  padding: 5px 0px;
-  margin: 4px 0;
-  border-radius: 5px;
-  background-color: rgb(85, 85, 85);
-  border: none;
-  color: white;
-}
-.temp:hover{
-  background-color: rgb(100, 100, 100);
-  color: rgb(185, 185, 185);
-}
-.temp:focus{
+.temp:focus {
   box-shadow: 1px 1px 3px rgba(0, 255, 255, 0.7);
   color: aqua;
 }
-.curr{
-  max-width: 100px;
-  margin: 20px 0px 0px 0px;
-}
-.hidden{
+.hidden {
   display: none;
 }
-.result{
+
+.result {
   color: white;
   font-size: 30px;
 }
-.container{
+
+.container {
   display: flex;
   flex-wrap: wrap;
   max-width: 250px;
   gap: 5px;
 }
-.keypad{
+.keypad {
   padding: 10px 30px;
   min-width: 80px;
   max-width: 80px;
@@ -87,8 +89,7 @@ h1{
   background-color: rgb(85, 85, 85);
   color: white;
 }
-.keypad:hover{
+.keypad:hover {
   background-color: rgb(100, 100, 100);
   color: rgb(185, 185, 185);
 }
- 
