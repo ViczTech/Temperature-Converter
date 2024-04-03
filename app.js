@@ -120,7 +120,7 @@ submit.onclick = function () {
       } else if (nexttempBTN.innerText == "Fahrenheit") {
         result.innerText = (Celsius * 1.8 + 32).toFixed(4);
       } else if (nexttempBTN.innerText == "Kelvin") {
-        result.innerText = Celsius + 273.15;
+        result.innerText = (Celsius + 273.15).toFixed(4);
       }
     } else if (currentTempBTN.innerText == "Fahrenheit") {
       Fahrenheit = allNum;
@@ -136,7 +136,7 @@ submit.onclick = function () {
       if (nexttempBTN.innerText == "Kelvin") {
         result.innerText = Kelvin;
       } else if (nexttempBTN.innerText == "Celsius") {
-        result.innerText = Kelvin - 273.15;
+        result.innerText = (Kelvin - 273.15).toFixed(4);
       } else if (nexttempBTN.innerText == "Fahrenheit") {
         result.innerText = ((9 / 5) * (Kelvin - 273.15) + 32).toFixed(4);
       }
