@@ -9,11 +9,12 @@
 
   <body>
     <!-- CONTAINS THE COMPLETE BLACK BOX -->
-    <div class="theContainer">
+    <div class="theContainer light-mode">
+      <button class="dark-mode" id="darkModeButton">Dark</button>
       <h1>Temperature</h1>
       <!-- TEMPERTURE HEADING -->
       <input
-        class="number"
+        class="number light-mode"
         type="number"
         name="number"
         id="input"
@@ -38,8 +39,9 @@
           <button class="temp" id="nextCel">Celsius</button>
         </div>
       </div>
-      <p class="result" id="result">0</p>
-
+      <!-- BUTTON FOR SWITCHING NEXTTEMPERATURE TYPES  -->
+      <p class="result light-mode" id="result">0</p>
+      <!-- RESULT BUTTON -->
       <div class="container">
         <button class="keypad" id="enter">Enter</button>
         <button class="keypad" id="clearAll">CE</button>
@@ -55,7 +57,7 @@
         <button class="keypad" id="no3">3</button>
       </div>
     </div>
-
+    <!-- KEYPAD BUTTON -->
     <script src="./app.js"></script>
   </body>
 </html>
